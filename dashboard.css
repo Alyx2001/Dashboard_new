@@ -230,7 +230,7 @@ a.sidebar-link:hover {
   flex-direction: row;
   justify-content: center; 
   gap: 1rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -995,7 +995,7 @@ input[type="checkbox"] {
 
 /*modal outside color*/
 .modal-backdrop.show {
-  background-color: rgba(12, 3, 46, 0.34); /* Adjust the alpha value for the transparency level (0.3 means 30% opacity) */
+  background-color: rgba(0, 0, 0, 0.37); /* Adjust the alpha value for the transparency level (0.3 means 30% opacity) */
 }
 
 /* Media Queries for Responsiveness */

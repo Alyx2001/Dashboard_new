@@ -882,7 +882,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 10px;
-  color: #007bff;
+  color: #021325;
 }
 
 .btn-notify,
@@ -917,10 +917,12 @@ body {
   background-color: white; /* Ensure modal content remains solid */
 
 }
-
+.modal-header .modal-title{
+  font-size: 2.1rem;
+}
 .modal-header {
   background-color: #ffffff;
-  color: rgb(0, 145, 255); /*text color*/
+  color: rgb(0, 7, 12); /*text color*/
   border-radius: 10px 10px 0 0;
   padding: 15px;
 }

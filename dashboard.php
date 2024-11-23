@@ -206,11 +206,11 @@ if(!isset($_SESSION['user_role'])) {
 
             // Rush Request Query 
             $rush_sql = "SELECT sr.customer_name, sr.customer_id, 
-                            SUM(DISTINCT sr.weight) AS total_weight, 
-                            SUM(DISTINCT sr.quantity) AS total_quantity, 
+                            SUM(sr.weight) AS total_weight, 
+                            SUM(sr.quantity) AS total_quantity, 
                             sr.request_date, sr.service_req_time, sr.remarks, tr.customer_address, tr.brgy ,tr.total_amount
                         FROM service_request sr
-                        JOIN transaction tr ON sr.customer_id = tr.customer_id
+                        JOIN transaction tr ON sr.request_id = tr.request_id
                         WHERE sr.remarks IN ('Undelivered', 'Unclaimed', 'Pending')
                             AND tr.laundry_cycle = 'Rush'
                             AND sr.request_date <= CURRENT_DATE
